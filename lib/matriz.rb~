@@ -1,0 +1,22 @@
+
+class matriz
+	attr_reader :m, :f, :c
+	
+	def initialize(m)
+		@m=m
+		@f=m.size
+		@c=m[0].size
+	end
+
+
+
+	def +(other)	 
+   		r =@m
+   	 	for i in 0...@f do
+   			for j in 0...@c do
+   				r[i][j]=@m[i][j]+other.m[i][j]
+   			end
+   	 	end
+   	 	return r
+    	end
+end
