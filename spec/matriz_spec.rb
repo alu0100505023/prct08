@@ -15,7 +15,7 @@ describe Matriz do
 		end
 		
 		it "Multiplicacion de matrices" do
-			(@m1*@m2).should eq([[14,12,10],[14,12,10],[14,12,10]])
+			(@m1*@m2).should eq([[6,42,135],[14,90,285],[6,42,135]])
 		end	
 	end
 end
