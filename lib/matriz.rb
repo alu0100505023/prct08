@@ -71,19 +71,7 @@ class Matriz
 		end
 		
 	end
-=begin
 
-	def []=(i,j,v)
-
-		@m[i][j] = v
-	end
-=end
-=begin
-	def [] (i,j)
-		@m[i][j]
-	end
-=end
-=begin
 	def /(other)
 		#rd=@m
 		##m=Matrix.build(other.f,other.c){|x| other.m}
