@@ -4,22 +4,24 @@ require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new
 task :default => :spec
 
-desc 'cargar el rspec'
+desc "Ejecutar las pruebas"
 task :spec do
-	sh "rspec -I. spec/matriz_spec.rb"
+  sh "rspec -I. spec/matriz_spec.rb"
 end
 
-desc 'cargar documentacion'
+desc "Ejecutar con documentacion."
 task :test do
-	sh "rspec -I. spec/matriz_spec.rb --format documentation"
+  sh "rspec -I. spec/matriz_spec.rb --format documentation"
 end
 
-desc 'ejecutar matriz.rb'
+desc "Ejecutar el fichero matriz.rb."
 task :bin do
-	sh "ruby lib/matriz.rb"
+  sh "ruby lib/matriz.rb"
 end
 
-desc 'cargar documentacion html'
+desc "Ejecutar el formato html"
 task :html do
-	sh "rspec -I. spec/matriz_spec.rb --format html"
+  sh "rspec -I. spec/matriz_spec.rb --format html"
 end
+
+
